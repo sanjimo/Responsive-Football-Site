@@ -8,6 +8,7 @@ body{
    font-family: 'Poppins', sans-serif;
    background-color: white;
    margin: 0;
+   padding: 0;
 }
 
 
@@ -20,44 +21,220 @@ body{
     background-color: #2D25A0;
     width: 1440px;
     height: 677px;
+    margin-bottom: 70px;
+}
+
+.head-text{
+    padding-top: 121px;
+    padding-left: 156px;
+    padding-bottom: 240px;
 }
 
 .head-title{
     width: 485px;
     height: 230px;
-    margin-top: 207px;
-    margin-bottom: 25px;
-    margin-left: 156px;
-    font-family: 'Poppins';
     font-size: 64px;
-    font-weight: 700;
-    line-height: 80px;
+    font-weight: bold;
+    line-height: 100px;
     color: #FFFFFF;
+    padding-bottom: 100px; 
+    padding-right: 80px;
 }
 
-.head-info a{
+.button-link{ 
+    padding: 0;
+    text-decoration: none;
     width: 168px;
     height: 44px;
     background-color: #E02C6D;
-    color: #FFFFFF;
-    margin-left: 156px;
-    margin-bottom: 171px;
-    padding: 10px 24px 10px 24px;
+}
+
+.button-link a{
+    font-style: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-size: 16px;
-    font-style: medium;
-    line-height: 24px;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    padding-bottom: 127px;
+}
 
+
+.fa-arrow-right{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+
+.head-image{
+    padding-bottom: 89px;
+    padding-right: 140px;
+    padding-top: 150px;
 }
 
 .head-image img{
-    width: 556.01px;
+    width: 566.01px;
     height: 438px;
-    margin-left: 102px;
-    margin-right: 140px;
-    margin-top: 150px;
-    margin-bottom: 89px;
 }
+
+.head-image:hover img{
+    width: 550px;
+    height: 500px;
+    transition: 2s;
+    transform: scale(1.25);
+}
+
+/* Top section styles */
+
+.top-section{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 70px 210px 165px 180px;
+    padding-top: 70px;
+}
+
+.players{
+    width: 300px;
+    height: 426px;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 45px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 50px;
+
+}
+
+.player-image{
+    width: 300px;
+    height: 256px;
+}
+
+.player-image img{
+   width: 100%;
+}
+
+.player-title{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+    margin: 10px 0px;
+    line-height: 40px;
+
+}
+
+.player-bio{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+    text-align: left;
+    padding-right: 15px;
+}
+
+/* Brand section styles */
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 35px;
+}
+
+.partners {
+    text-align: center;
+    font-size: 25px;
+}
+
+.brand-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 12%;
+    margin-bottom: 80px;
+}
+
+.brand-product img {
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Extra section styles */
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 35px;
+}
+
+.clubs{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.club-image{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 0 20%;
+    margin-bottom: 80px;
+}
+
+.club-image img{
+    height: 70%;
+    width: 70%;
+}
+
+img{
+    width: 100%;
+}
+
+/* Footer styles */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer-image{
+    width: 483.87px;
+    height: 110px;
+    margin: 20px 0px;
+}
+
+.social-icon{
+    padding-top: 20px;
+}
+
+footer .fab{
+    color: #969BAB;
+    background-color: #d6d8df;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 14px;
+    border-radius: 50%;
+}
+
+.copyright{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 63px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+}
+
 
 /* Media queries */
 
@@ -65,135 +242,163 @@ body{
 
 @media only screen and (max-width:688px){
    .top-header{
-       width: 360px;
-       height: 695px;
-       background-color: #2D25A0;
-       grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      width: 100%;
+      align-items: center;
    }
+
+   .head-text{
+       margin-right: 20%;
+   } 
 
    .head-title{
-       width: 278px;
-       height: 138px;
-       margin-left: 16px;
-       margin-top: 112px;
-       margin-bottom: 30px;
-       margin-right: 66px;
-       font-size: 36px;
-       line-height: 50px;
+       font-size: 40px;
    }
 
-   .head-info a{
-      width: 168px;
-      height: 44px;
-      background-color: #E02C6D;
-      color: #FFFFFF;
-      margin-left: 19px;
-      margin-right: 173px;
-      padding: 10px 24px 10px 24px;
-      text-decoration: none;
-      font-size: 16px;
-      font-style: medium;
-      line-height: 24px;
+   .button-link a {
+       padding-bottom: 100px;
    }
 
-    .head-image img{
-       width: 329px;
-       height: 259.17px;
-       margin-top: 50px;
-       margin-bottom: 61.83px;
-       margin-left: 15px;
-       margin-right: 16px;
+   .head-image img{
+       width: 250px;
+       height: 250px;
+       display: flex;
+       align-items: center;
+       padding-left: 30%;
+       padding-bottom: 65px;
+   }
+
+    .head-image:hover img {
+       width: 260px;
+       height: 260px;
+       transform: scale(1.25);
     }
+
+    .top-header, .top-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-section{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .fa-arrow-right{
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .players {
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+   /* Brand Section */
+   
+    .brand {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand-product {
+        display: grid;
+        padding: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Extra  Section */
+   
+   .clubs {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+    .club-image {
+       display: grid;
+       padding: 20px;
+       overflow: hidden;
+       margin-right: 10px;
+       grid-template-columns: repeat(2, 1fr);
+ }
+
+    /* Footer Setction */
+    
+    footer {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .footer-image {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-image img {
+        height: 200px;
+        width: 200px;
+       margin-left: 80px;
+    }
+}
+
 }
 
 /* Tablet devices */
 
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-    .top-header{
-       width: 100%;
-       background-color: #2D25A0;
-       grid-template-columns: repeat(2, 1fr);
-    }
-   
-   .head-title{
-       width: 250px;
-       margin-left: 25px;
-       margin-top: 207px;
-       margin-bottom: 115px;
+@media only screen and (min-width:668px) and (max-width:992px) {
+    .top-header {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        width: 100%;
+        align-items: center;
     }
 
-    .head-info a{
-        width: 168px;
-        height: 44px;
-        background-color: #E02C6D;
-        color: #FFFFFF;
-        margin-left: 25px;
-        padding: 10px 24px 10px 24px;
-        text-decoration: none;
-        font-size: 16px;
-        font-style: medium;
-        line-height: 24px;
+    .head-title {
+        font-size: 45px;
     }
 
-   .head-image img{
-       width: 400px;
-       height: 300px;
-       margin-top: 200px;
-       margin-bottom: 61.83px;
-       margin-left: 10px;
-       margin-right: 15px;
+    .head-image img {
+        Width: 400px;
+        Height: 400px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 65px;
+    }
+
+    .head-image:hover img {
+        width: 320px;
+        height: 320px;
+        transform: scale(1.25);
+        margin-right: 15%;
+    }
+
+    .top-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .players {
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand-product {
+        display: grid;
+        padding: 0 20px;
+        margin-right: 10px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
-
-/* Footer styles */
-
-/* footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    width: 483.87px;
-    height: 213px;
-    margin-top: 1026px; 
-    margin-left: 475px;
-    margin-right: 481.13px;
-     margin-bottom: 63px; 
-}
-
-footer img{
-    width: 483.87px;
-    height: 110px;
-    margin: 20px;
-}
-
-.social-icon{
-    width: 170px;
-    height: 32px;
-    padding-top: 0px 20px;
-}
-
-.fab{
-    color: gray;
-    width: 32px;
-    height: 32px;
-    padding: 0px 8px;
-}
-
-.copyright{
-    width: 236px;
-    height: 31px;
-    margin-left: 123.94px;
-    margin-right: 123.94px;
-    padding-top: 20px;
-}
-
-.copyright p{
-    color: black;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-} */
