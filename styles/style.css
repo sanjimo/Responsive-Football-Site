@@ -1,8 +1,199 @@
-/* fonts */
+/* font awesome stylesheet */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* common styles or utilities */
+
 body{
    font-family: 'Poppins', sans-serif;
-   background-color: #F3F1FF;
+   background-color: white;
+   margin: 0;
 }
+
+
+
+/* Top heading styles */
+
+.top-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+}
+
+.head-title{
+    width: 485px;
+    height: 230px;
+    margin-top: 207px;
+    margin-bottom: 25px;
+    margin-left: 156px;
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.head-info a{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    margin-left: 156px;
+    margin-bottom: 171px;
+    padding: 10px 24px 10px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: medium;
+    line-height: 24px;
+
+}
+
+.head-image img{
+    width: 556.01px;
+    height: 438px;
+    margin-left: 102px;
+    margin-right: 140px;
+    margin-top: 150px;
+    margin-bottom: 89px;
+}
+
+/* Media queries */
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px){
+   .top-header{
+       width: 360px;
+       height: 695px;
+       background-color: #2D25A0;
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+   .head-title{
+       width: 278px;
+       height: 138px;
+       margin-left: 16px;
+       margin-top: 112px;
+       margin-bottom: 30px;
+       margin-right: 66px;
+       font-size: 36px;
+       line-height: 50px;
+   }
+
+   .head-info a{
+      width: 168px;
+      height: 44px;
+      background-color: #E02C6D;
+      color: #FFFFFF;
+      margin-left: 19px;
+      margin-right: 173px;
+      padding: 10px 24px 10px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      font-style: medium;
+      line-height: 24px;
+   }
+
+    .head-image img{
+       width: 329px;
+       height: 259.17px;
+       margin-top: 50px;
+       margin-bottom: 61.83px;
+       margin-left: 15px;
+       margin-right: 16px;
+    }
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .top-header{
+       width: 100%;
+       background-color: #2D25A0;
+       grid-template-columns: repeat(2, 1fr);
+    }
+   
+   .head-title{
+       width: 250px;
+       margin-left: 25px;
+       margin-top: 207px;
+       margin-bottom: 115px;
+    }
+
+    .head-info a{
+        width: 168px;
+        height: 44px;
+        background-color: #E02C6D;
+        color: #FFFFFF;
+        margin-left: 25px;
+        padding: 10px 24px 10px 24px;
+        text-decoration: none;
+        font-size: 16px;
+        font-style: medium;
+        line-height: 24px;
+    }
+
+   .head-image img{
+       width: 400px;
+       height: 300px;
+       margin-top: 200px;
+       margin-bottom: 61.83px;
+       margin-left: 10px;
+       margin-right: 15px;
+    }
+}
+
+
+
+/* Footer styles */
+
+/* footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 483.87px;
+    height: 213px;
+    margin-top: 1026px; 
+    margin-left: 475px;
+    margin-right: 481.13px;
+     margin-bottom: 63px; 
+}
+
+footer img{
+    width: 483.87px;
+    height: 110px;
+    margin: 20px;
+}
+
+.social-icon{
+    width: 170px;
+    height: 32px;
+    padding-top: 0px 20px;
+}
+
+.fab{
+    color: gray;
+    width: 32px;
+    height: 32px;
+    padding: 0px 8px;
+}
+
+.copyright{
+    width: 236px;
+    height: 31px;
+    margin-left: 123.94px;
+    margin-right: 123.94px;
+    padding-top: 20px;
+}
+
+.copyright p{
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+} */
