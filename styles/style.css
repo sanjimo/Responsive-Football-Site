@@ -19,8 +19,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #2D25A0;
-    width: 1440px;
-    height: 677px;
+    width: 100%;
     margin-bottom: 70px;
 }
 
@@ -241,42 +240,39 @@ footer .fab{
 /* Mobile devices */
 
 @media only screen and (max-width:688px){
-   .top-header{
+
+   .top-header, .top-section, .players, .club-image{
+
       grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
-      width: 100%;
-      align-items: center;
    }
 
-   .head-text{
-       margin-right: 20%;
+   /* .head-text{
+       margin-left: 16px;
+       margin-bottom: 31px;
    } 
 
    .head-title{
-       font-size: 40px;
-   }
+       font-size: 30px;
+   } */
 
-   .button-link a {
+   /* .button-link a {
        padding-bottom: 100px;
-   }
+   } */
 
    .head-image img{
-       width: 250px;
-       height: 250px;
+       width: 300px;
+       height: 280px;
        display: flex;
        align-items: center;
-       padding-left: 30%;
-       padding-bottom: 65px;
+       padding-left: 15px;
+       /* padding-bottom: 50px; */
+       /* padding-top: 25px; */
    }
 
     .head-image:hover img {
-       width: 260px;
-       height: 260px;
+       width: 350px;
+       height: 300px;
        transform: scale(1.25);
-    }
-
-    .top-header, .top-section{
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .top-section{
@@ -310,7 +306,7 @@ footer .fab{
 
     .brand-product {
         display: grid;
-        padding: 20px;
+        /* padding: 20px; */
         overflow: hidden;
         margin-right: 10px;
         grid-template-columns: repeat(2, 1fr);
@@ -328,7 +324,7 @@ footer .fab{
        padding: 20px;
        overflow: hidden;
        margin-right: 10px;
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: repeat(1, 1fr);
  }
 
     /* Footer Setction */
@@ -392,13 +388,37 @@ footer .fab{
     .players {
         margin-right: 10px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .brand-product {
         display: grid;
         padding: 0 20px;
         margin-right: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .club-image {
+        display: grid;
+        padding: 0 20px;
+        margin-right: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ 
+    .footer-image {
+       display: grid;
+       width: 100%;
+       grid-template-columns: repeat(1, 1fr);
+    }
+ 
+    .footer-image img {
+         height: 200px;
+         width: 200px;
+        margin-left: 80px;
     }
 }
