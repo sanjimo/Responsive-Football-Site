@@ -30,17 +30,13 @@ body{
 }
 
 .head-title{
-    width: 485px;
-    height: 230px;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: bold;
-    line-height: 100px;
+    line-height: 60px;
     color: #FFFFFF;
-    padding-bottom: 100px; 
-    padding-right: 80px;
 }
 
-.button-link{ 
+.button-link{
     padding: 0;
     text-decoration: none;
     width: 168px;
@@ -49,7 +45,6 @@ body{
 }
 
 .button-link a{
-    font-style: medium;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +57,6 @@ body{
 
 
 .fa-arrow-right{
-    display: flex;
-    justify-content: center;
     color: #FFFFFF;
     padding-left: 8px;
 }
@@ -246,27 +239,12 @@ footer .fab{
       grid-template-columns: repeat(1, 1fr);
    }
 
-   /* .head-text{
-       margin-left: 16px;
-       margin-bottom: 31px;
-   } 
-
-   .head-title{
-       font-size: 30px;
-   } */
-
-   /* .button-link a {
-       padding-bottom: 100px;
-   } */
-
    .head-image img{
        width: 300px;
        height: 280px;
        display: flex;
        align-items: center;
        padding-left: 15px;
-       /* padding-bottom: 50px; */
-       /* padding-top: 25px; */
    }
 
     .head-image:hover img {
@@ -298,7 +276,7 @@ footer .fab{
     }
 
    /* Brand Section */
-   
+
     .brand {
        display: grid;
        grid-template-columns: repeat(1, 1fr);
@@ -306,14 +284,15 @@ footer .fab{
 
     .brand-product {
         display: grid;
-        /* padding: 20px; */
+        /* padding: 10px; */
         overflow: hidden;
-        margin-right: 10px;
-        grid-template-columns: repeat(2, 1fr);
+        /* margin-right: 70px;  */
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
     }
 
     /* Extra  Section */
-   
+
    .clubs {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -321,14 +300,14 @@ footer .fab{
 
     .club-image {
        display: grid;
-       padding: 20px;
+       padding: 10px;
        overflow: hidden;
        margin-right: 10px;
        grid-template-columns: repeat(1, 1fr);
  }
 
     /* Footer Setction */
-    
+
     footer {
        display: flex;
        flex-wrap: wrap;
@@ -341,13 +320,12 @@ footer .fab{
     }
 
     .footer-image img {
-        height: 200px;
+        height: 100px;
         width: 200px;
        margin-left: 80px;
     }
 }
 
-}
 
 /* Tablet devices */
 
